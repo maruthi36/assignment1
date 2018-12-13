@@ -40,6 +40,18 @@
           
           document.writeln(studentobj[k].name+"  "+studentobj[k].avg);
        }
+      studentobj.sort(function(a, b){
+	      if(a.name < b.name) 
+ 		       return -1 
+	      else
+		        return 1
+        })
+      for(var k=0;k<studentobj.length;k++)
+        {
+          
+          document.writeln(studentobj[k].name+"  "+studentobj[k].avg+"  "+studentobj[k].sum);
+       }
+         
       
       
       
