@@ -11,7 +11,7 @@
         function student(name)
         {
             this.name=name;
-            this.subj=new Array(Math.floor(Math.random() * 100),Math.floor       (Math.random() * 100),Math.floor(Math.random() * 100));
+            this.subj=new Array(Math.floor(Math.random() * 100),Math.floor(Math.random() * 100),Math.floor(Math.random() * 100));
     
               
         }
@@ -26,11 +26,11 @@
             alert(sum);
           alert(avg);
         }
-       // stuobj.sort(function(a,b){return b.sum-a.sum});
-        //for(var i=0;i<stuobj.length;i++)
-        //{
-         // document.writeln(stuobj[i].name+"  "+stuobj[i].sum);
-       // }
+        stuobj.sort(function(a,b){return b.sum-a.sum});
+        for(var i=0;i<stuobj.length;i++)
+        {
+          document.writeln(stuobj[i].name+"  "+stuobj[i].sum);
+       }
         
         
     </script>
