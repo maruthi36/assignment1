@@ -12,9 +12,7 @@
         {
             this.name=name;
             this.subj=new Array(Math.floor(Math.random() * 100),Math.floor(Math.random() * 100),Math.floor(Math.random() * 100));
-    
-              
-        }
+	}
         for(var i=0;i<studentobj.length;i++)
         {
             sum=0;
@@ -24,24 +22,23 @@
             }
             studentobj[i].avg=studentobj[i].sum/3;
         }
-        <h1>BEFORE SORTING</h1>
+       // <h1>BEFORE SORTING</h1>
 	for(var k=0;k<studentobj.length;k++)
         {
-          
-          document.writeln(studentobj[k].name+"  "+studentobj[k].sum+" "+studentobj[k].avg);
-       }
+          document.writeln("<br />"+studentobj[k].name+"  "+studentobj[k].sum+" "+studentobj[k].avg);
+        }
        studentobj.sort(function(a,b){return b.sum-a.sum});
-       <h1>AFTER SORTING BASED ON SUM</h1>
+       //<h1>AFTER SORTING BASED ON SUM</h1>
         for(var i=0;i<studentobj.length;i++)
         {
-          document.writeln(studentobj[i].name+"  "+studentobj[i].sum);
+          document.writeln("<br />"+studentobj[i].name+"  "+studentobj[i].sum);
        }
       studentobj.sort(function(a,b){return b.avg-a.avg});
-	<h1>AFTER SORTING BASED ON AVERAGES</h1>    
+	//<h1>AFTER SORTING BASED ON AVERAGES</h1>    
         for(var k=0;k<studentobj.length;k++)
         {
           
-          document.writeln(studentobj[k].name+"  "+studentobj[k].avg);
+          document.writeln("<br />"+studentobj[k].name+"  "+studentobj[k].avg);
        }
       studentobj.sort(function(a, b){
 	      if(a.name < b.name) 
@@ -49,11 +46,11 @@
 	      else
 		        return 1
         })
-        <h1>AFTER SORTING BASED ON NAMES</h1>
+        //<h1>AFTER SORTING BASED ON NAMES</h1>
 	for(var k=0;k<studentobj.length;k++)
         {
           
-          document.writeln(studentobj[k].name+"  "+studentobj[k].avg+"  "+studentobj[k].sum);
+          document.writeln("<br />"+studentobj[k].name+"  "+studentobj[k].avg+"  "+studentobj[k].sum);
        }
          
       
