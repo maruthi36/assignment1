@@ -23,13 +23,11 @@
                 this.sum=sum+stuobj[i].subj[j];
             }
             avg=sum/3;
-            //alert(sum);
-         // alert(avg);
         }
         for(var k=0;k<stuobj.length;k++)
         {
           
-          alert(this.name+"  "+this.avg);
+          alert(stuobj[k].name+"  "+stuobj[k].avg);
        }
         stuobj.sort(function(a,b){return b.sum-a.sum});
         for(var i=0;i<stuobj.length;i++)
