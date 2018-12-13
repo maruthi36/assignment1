@@ -28,13 +28,13 @@
           document.writeln("<br />"+studentobj[k].name+"  "+studentobj[k].sum+" "+studentobj[k].avg);
         }
        studentobj.sort(function(a,b){return b.sum-a.sum});
-       //<h2>after sorting based on sum</h2>
+       document.writeln("<h2>after sorting based on sum</h2>");
         for(var i=0;i<studentobj.length;i++)
         {
           document.writeln("<br />"+studentobj[i].name+"  "+studentobj[i].sum);
        }
       studentobj.sort(function(a,b){return b.avg-a.avg});
-	//<h2>after sorting based on averages</h2>   
+	document.writeln("<h2>after sorting based on averages</h2>");   
         for(var k=0;k<studentobj.length;k++)
         {
           
@@ -46,7 +46,7 @@
 	      else
 		        return 1
         })
-        //<h2>after sorting based on names</h2>
+        document.writeln("<h2>after sorting based on names</h2>");
 	for(var k=0;k<studentobj.length;k++)
         {
           
