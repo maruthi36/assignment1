@@ -24,17 +24,20 @@
             }
             studentobj[i].avg=studentobj[i].sum/3;
         }
-        for(var k=0;k<studentobj.length;k++)
+        <h1>BEFORE SORTING</h1>
+	for(var k=0;k<studentobj.length;k++)
         {
           
-          document.writeln(studentobj[k].name+"  "+studentobj[k].sum);
+          document.writeln(studentobj[k].name+"  "+studentobj[k].sum+" "+studentobj[k].avg);
        }
        studentobj.sort(function(a,b){return b.sum-a.sum});
+       <h1>AFTER SORTING BASED ON SUM</h1>
         for(var i=0;i<studentobj.length;i++)
         {
           document.writeln(studentobj[i].name+"  "+studentobj[i].sum);
        }
       studentobj.sort(function(a,b){return b.avg-a.avg});
+	<h1>AFTER SORTING BASED ON AVERAGES</h1>    
         for(var k=0;k<studentobj.length;k++)
         {
           
@@ -46,7 +49,8 @@
 	      else
 		        return 1
         })
-      for(var k=0;k<studentobj.length;k++)
+        <h1>AFTER SORTING BASED ON NAMES</h1>
+	for(var k=0;k<studentobj.length;k++)
         {
           
           document.writeln(studentobj[k].name+"  "+studentobj[k].avg+"  "+studentobj[k].sum);
