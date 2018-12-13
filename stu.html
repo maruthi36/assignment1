@@ -1,2 +1,39 @@
+<html>
+  <head>
+    <title>STUDENT DATA</title>
+    <script type="text/javascript">
+        var stu1=new student("maruthi");
+        var stu2=new student("bindu");
+        var stu3=new student("akhila");
+        var stu4=new student("bharathi");
+        var stu5=new student("ramya");
+        var stuobj=[stu1,stu2,stu3,stu4,stu5];
+        function student(name)
+        {
+            this.name=name;
+            this.subj=new Array(Math.floor(Math.random() * 100),Math.floor       (Math.random() * 100),Math.floor(Math.random() * 100));
+    
+              
+        }
+        for(var i=0;i<stuobj.length;i++)
+        {
+            var sum=0;
+            for(var j=0;j<3;j++)
+            {
+                sum=sum+stuobj[i].subj[j];
+            }
+            var avg=sum/3;
+        }
+        stuobj.sort(a,b){return b.sum-a.sum});
+        for(var i=0;i<stuobj.length;i++)
+        {
+          document.writeln(stuobj[i].name+"  "+stuobj[i].sum);
+        }
+        
+        
+    </script>
+    <body/>
+</html>
+       
 
-c
+
