@@ -20,11 +20,9 @@
             sum=0;
             for(var j=0;j<3;j++)
             {
-                this.sum=sum+studentobj[i].subj[j];
+                studentobj[i].sum=sum+studentobj[i].subj[j];
             }
-            avg=sum/3;
-            alert(sum);
-            alert(avg);
+            studentobj[i].avg=sum/3;
         }
         for(var k=0;k<studentobj.length;k++)
         {
