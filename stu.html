@@ -8,6 +8,7 @@
         var stu4=new student("bharathi");
         var stu5=new student("ramya");
         var stuobj=[stu1,stu2,stu3,stu4,stu5];
+        var sum;
         function student(name)
         {
             this.name=name;
@@ -17,7 +18,7 @@
         }
         for(var i=0;i<stuobj.length;i++)
         {
-            var sum=0;
+            sum=0;
             for(var j=0;j<3;j++)
             {
                 sum=sum+stuobj[i].subj[j];
